@@ -1,0 +1,277 @@
+.todo_div{
+    background-color: #ffffff;
+    margin: auto;
+    /* box-shadow: -2px 2px 56px -18px rgba(0,0,0,0.87); */
+    border-bottom:0.25px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+
+}.todo_div:hover > .delete_button{
+    visibility: visible;
+}.subTask:hover > .delete_button{
+    visibility: visible;
+}
+s{
+    color: grey;
+}#divOfTodos{
+    width: 100%;
+    padding-left: 50px;
+}
+
+body{
+    background-color: #ffffff;
+    font-size: 15px;
+}
+#date{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 10px;
+}
+#addButton{
+    margin: 10px;
+    border: 0px;
+    text-align: center;
+    background-color: #ffffff;
+    position: relative;
+    font-size: 14px;
+    padding: 5px;
+    
+}span{
+    border: 0px;
+    height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 4px;
+    font-size: 23px;
+    font-weight: 150;
+    text-align: center;
+    color: black;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    vertical-align: center;
+    align-items: center;
+}#addButton:hover{
+    color: #fb5f60;
+}
+#addButton:hover > span{
+    background: #fb5f60;
+    color: white;
+}#confirm_task{
+    background-color: #fb5f60;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left:10px;
+}#root{
+    margin-bottom: 10px;
+}.custom_button{
+    font-size: 13px;
+   
+}#cancel{
+    position: relative;
+    top: 5px;
+    margin-left: 0px;
+}.custom_button:hover{
+    text-decoration: underline;
+}#input_todo_name{
+    border-radius: 10px;
+    border: 0px;
+    margin: 5px;
+    width: 100%;
+   /*  margin-left: 20px; */
+    height: 60px;
+    border-radius: 10px;
+    border: 0.25px solid #e6e6e6;
+    padding: 10px 10px 10px 20px;
+}#addSubButton{
+    border:1px solid #b1b1b1;
+    color:#b1b1b1;
+    border-radius: 7px;
+    background-color: white;
+    height: 30px;
+    position: relative;
+    top: 20px
+
+}#stepAdd{
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 1px solid #ec4141;
+   width: 75%;
+   margin: 10px;
+      padding:10px;
+      text-align: center;
+}#containerOfSubs{
+    background-color: white;
+    border-radius: 10px;
+
+}.subTask{
+    border-bottom: 1px solid #c6c6c6;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    display: flex;
+    align-items: center;
+}.inputStepDiv{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}.stepName{
+
+    margin-top: 15px;
+    margin-left: 5px;
+    
+}
+hr{
+    margin-bottom: 5px;
+}.icon{
+    height: 15px;
+    height: 15px;
+    position: relative;
+}#timer{
+    float: right;
+}.check{
+    margin-right: 10px;
+    margin-left: 10px;
+    display:inline-block;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6
+}.delete_button{
+    margin-left: auto;
+    position: relative;
+    visibility: hidden;
+}#inputNewTodoDiv{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}#containerOfBody{
+
+    margin: 20px
+}.section{
+    font-size: 25px;
+    margin:5px;
+}.done{
+    border: 0px;
+    display: block;
+} 
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }#editDiv{
+      background-color: #f7f7f7;
+      padding: 40px;
+      
+  }.containerEdit{
+      padding:0px;
+      margin:0px;
+      top: 0px;
+  }
+
+  
+  
+
+.day{
+      text-align: center;
+      font-size: 15px;
+      padding:10px;
+      margin: 10px;
+      cursor: pointer;
+
+  }.daysOfWeek{
+    display: flex;
+
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .current{
+      background-color: #ec4141;
+      border-radius: 7px;
+      color: white;
+
+
+  }.bodyOfTodosEditFlat{
+      display: grid;
+      height: 100%;
+      grid-template-columns: 60% 40%;
+
+  }.wrapper{
+      width: 0px;
+  }
+  
+  #todoChange{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+     border-bottom: 1px solid #c6c6c6;
+     width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        padding:10px;
+    
+  }.active{
+      background:#ec4141 !important;
+      color: white !important; 
+      border: 0px !important;
+  }#editDivPop{
+      left: 15vw;
+      background-color: #f7f7f7;
+      z-index: 1000;
+      position: fixed;
+      width: 100vw;
+      padding: 30px;
+      border-radius: 30px;
+      width: 70%;
+      top:10vw;
+
+  }.overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:black;
+      z-index: 100;
+      opacity: 0.4;
+  }
+  @media(max-width:500px){
+      #editDivPop{
+          width: 90%;
+          left: 5vw;
+      }.current{
+          width: 25px;
+          height: 25px;
+          padding:2px  !important;
+          border-radius: 50%;
+      }.day{
+          padding: 0px;
+          font-size:15px;
+          margin: 4vw;
+      }
+  }
+  @media(max-width:450px){
+    #editDivPop{
+        width: 100%;
+        left: 0vw;
+        top:15vw;
+        font-size: 13px;
+        height: 100vh;
+        padding:15px 0px 40px 0px;
+    }#containerOfSubs{
+        width: 100%;
+        border-radius: 25px;
+    }#todoChange{
+        font-size: 15px;
+    }
+}@media(max-width: 400px){
+    #divOfTodos{
+        padding:0px;
+    }
+       
+}
