@@ -197,7 +197,7 @@ app.post("/done/:day/:id", (req, res) => {
     })
 
 
-    /* console.log("got done req")
+    /* console.log("got done redfq")
     console.log(req.params.id)
     var id = req.params.id;
    
