@@ -6,7 +6,7 @@ import $, { event } from "jquery"
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { set } from 'mongoose';
 //function for 
-var server_address = "http://localhost:3000"
+var server_address = "https://weektodolist.herokuapp.com"
 var arrayOfDays = [];
 // Adding todos at the start of page 
 var AddButton = (props) => {
