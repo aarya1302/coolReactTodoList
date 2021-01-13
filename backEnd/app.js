@@ -22,7 +22,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 var __dirname = "/Users/aarya/Desktop/dev/crud project/Todo_list/"
 
 //sending of the present day
-
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
 app.use(express.static(process.cwd() + "/react_todo/build"))
 app.get("/", (req, res) => {
     res.sendFile(process.cwd() + "/react_todo/build/index.html")
