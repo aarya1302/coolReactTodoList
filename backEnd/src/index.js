@@ -417,7 +417,7 @@ class DisplayingDateTodos extends React.Component {
   render() {
     return (
       <div className="main">
-        {/* <div id="containerOfTodos">{arrayOfTodos}</div> */}
+       <p>Here's some information about how this works</p>
         <GetTodos />
       </div>
     )
