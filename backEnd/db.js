@@ -2,6 +2,7 @@ const { ObjectID } = require("bson");
 const { setUncaughtExceptionCaptureCallback } = require("process");
 const MongoClient = require("mongodb").MongoClient;
 const MongoOptions = require("mongodb").MongoOptions;
+require("dotenv").config({ path: "secrets.env" });
 let uri = process.env.MONGO_URI;
 let dbname = "cluster0";
 
