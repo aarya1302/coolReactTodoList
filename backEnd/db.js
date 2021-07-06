@@ -1,39 +1,34 @@
-
 const { ObjectID } = require("bson");
 const { setUncaughtExceptionCaptureCallback } = require("process");
-const MongoClient = require('mongodb').MongoClient;
-const MongoOptions = require('mongodb').MongoOptions;
-let uri = "mongodb+srv://aarya_bhorra:Ab1302lsd@cluster0.rkapb.mongodb.net/cluster0?retryWrites=true&w=majority";
+const MongoClient = require("mongodb").MongoClient;
+const MongoOptions = require("mongodb").MongoOptions;
+let uri = process.env.MONGO_URI;
 let dbname = "cluster0";
 
-
 var state = {
-    db: null
-}
+  db: null,
+};
 
-var connect = (cb) =>{
-    if(state.db)
-        cb()
-    else{
-        MongoClient.connect(uri, MongoOptions, (err, client) => {
-            if(err)
-                cb(err)
-            else{
-                state.db = client.db(dbname);
-                cb();
-            }
-        });
-    
-    }
-}
+var connect = (cb) => {
+  if (state.db) cb();
+  else {
+    MongoClient.connect(uri, MongoOptions, (err, client) => {
+      if (err) cb(err);
+      else {
+        state.db = client.db(dbname);
+        cb();
+      }
+    });
+  }
+};
 
-var getDB = () =>{
-    return state.db;
-}
+var getDB = () => {
+  return state.db;
+};
 
-var getPrimaryKey = (_id) =>{
-    return ObjectID(_id);
-}
+var getPrimaryKey = (_id) => {
+  return ObjectID(_id);
+};
 //console.log(getCollection());
 /*client.connect(err => {
   const collection = client.db("cluster0").collection("todos");
@@ -42,5 +37,4 @@ var getPrimaryKey = (_id) =>{
   client.close();
 });*/
 
-module.exports = {getDB, connect, getPrimaryKey}
-
+module.exports = { getDB, connect, getPrimaryKey };
