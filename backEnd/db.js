@@ -3,7 +3,7 @@ const { ObjectID } = require("bson");
 const { setUncaughtExceptionCaptureCallback } = require("process");
 const MongoClient = require('mongodb').MongoClient;
 const MongoOptions = require('mongodb').MongoOptions;
-let uri = "mongodb+srv://aarya_bhorra:Ab1302lsd@cluster0.rkapb.mongodb.net/cluster0?retryWrites=true&w=majority";
+
 let dbname = "cluster0";
 
 
