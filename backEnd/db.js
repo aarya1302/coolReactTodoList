@@ -13,7 +13,7 @@ var state = {
 var connect = (cb) => {
   if (state.db) cb();
   else {
-    MongoClient.connect(uri, MongoOptions, (err, client) => {
+    MongoClient.connect("mongodb+srv://aarya_bhorra:Ab1302lsd@cluster0.rkapb.mongodb.net/?retryWrites=true&w=majority", MongoOptions, (err, client) => {
       if (err) cb(err);
       else {
         state.db = client.db(dbname);
@@ -30,12 +30,5 @@ var getDB = () => {
 var getPrimaryKey = (_id) => {
   return ObjectID(_id);
 };
-//console.log(getCollection());
-/*client.connect(err => {
-  const collection = client.db("cluster0").collection("todos");
-  console.log(collection);
-  // perform actions on the collection object
-  client.close();
-});*/
 
 module.exports = { getDB, connect, getPrimaryKey };

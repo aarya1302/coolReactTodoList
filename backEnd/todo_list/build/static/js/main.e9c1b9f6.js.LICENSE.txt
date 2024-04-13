@@ -1,15 +1,3 @@
-/*
-    object-assign
-    (c) Sindre Sorhus
-    @license MIT
-    */
-
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
 /* @preserve
        * The MIT License (MIT)
        * 
@@ -36,7 +24,20 @@ object-assign
        */
 
 /*!
+                 * ignore
+                 */
+
+/*!
+               * Ensure `name` and `message` show up in toJSON output re: gh-9296
+               */
+
+/*!
                * Handle async validators
+               */
+
+/*!
+               * ignore
+               * @param {Readonly<CastError>} other
                */
 
 /*!
@@ -44,25 +45,12 @@ object-assign
                */
 
 /*!
-             * Ensure `name` and `message` show up in toJSON output re: gh-9296
-             */
+               * inspect helper
+               */
 
 /*!
-             * ignore
-             * @param {Readonly<CastError>} other
-             */
-
-/*!
-             * ignore
-             */
-
-/*!
-             * inspect helper
-             */
-
-/*!
-            * add message
-            */
+              * add message
+              */
 
 /*!
            * Checks for indexes added to subdocs using Schema.index().
@@ -72,11 +60,20 @@ object-assign
            */
 
 /*!
+           * OverwriteModel Error constructor.
+           */
+
+/*!
            * Recursively set nested arrays
            */
 
 /*!
            * ignore
+           */
+
+/*!
+           * toString helper
+           * TODO remove? This defaults to `${this.name}: ${this.message}`
            */
 
 /*!
@@ -128,10 +125,6 @@ object-assign
          */
 
 /*!
-         * OverwriteModel Error constructor.
-         */
-
-/*!
          * Registers remove event listeners for triggering
          * on subdocuments.
          *
@@ -141,11 +134,6 @@ object-assign
 
 /*!
          * ignore
-         */
-
-/*!
-         * toString helper
-         * TODO remove? This defaults to `${this.name}: ${this.message}`
          */
 
 /*!
@@ -435,6 +423,10 @@ object-assign
        */
 
 /*!
+       * The class that Mongoose uses internally to instantiate this SchemaType's `options` property.
+       */
+
+/*!
        * Use native promises by default
        */
 
@@ -589,6 +581,11 @@ object-assign
 
 /*!
      * Helper for JSON.stringify
+     * Ensure `name` and `message` show up in toJSON output re: gh-9847
+     */
+
+/*!
+     * If `val` is an object, returns constructor name, if possible. Otherwise returns undefined.
      */
 
 /*!
@@ -873,35 +870,52 @@ object-assign
     */
 
 /*!
-   * Sizzle CSS Selector Engine v2.3.5
-   * https://sizzlejs.com/
-   *
-   * Copyright JS Foundation and other contributors
-   * Released under the MIT license
-   * https://js.foundation/
-   *
-   * Date: 2020-03-14
-   */
-
-/*!
- * jQuery JavaScript Library v3.5.1
+ * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
  *
- * Includes Sizzle.js
- * https://sizzlejs.com/
- *
- * Copyright JS Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2020-05-04T22:49Z
+ * Date: 2023-08-28T13:37Z
  */
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
 /*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
-/** @license React v0.20.1
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * @license React
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -919,26 +933,8 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v17.0.1
- * react-dom.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v17.0.1
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v17.0.1
- * react.production.min.js
+/** @license React v17.0.2
+ * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
