@@ -15,6 +15,7 @@ router.post("/clearWeek", async (req, res) => {
 // Get todos for a specific day
 router.get("/getTodos/:day", async (req, res) => {
   try {
+    console.log("getting the request");
     document = await DailyTodo.findOne({ day: req.params.day });
 
     if (!document) {
